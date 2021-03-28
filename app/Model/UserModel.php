@@ -2,6 +2,21 @@
 
 class UserModel
 {
+    private $id;
+    private $firstName;
+    private $lastName;
+    private $picture;
+    private $email;
+
+    public function __construct($id, $firstName, $lastName, $picture, $email)
+    {
+        $this->id = $id;
+        $this->firstName = $firstName;
+        $this->lastName = $lastName;
+        $this->picture = $picture;
+        $this->email = $email;
+    }
+
     public static function getUsers()
     {
         // kvstore API url
@@ -31,6 +46,6 @@ class UserModel
 
         $response = json_decode($output, true);
 
-        return $response;
+        return $response["data"];
     }
 }
