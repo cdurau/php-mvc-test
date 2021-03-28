@@ -1,0 +1,3 @@
+<?php
+
+$userController = new UserController();

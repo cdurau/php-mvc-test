@@ -1,0 +1,7 @@
+services:
+    mein-server:
+        build: .
+        ports:
+            - 3000:80
+        volumes:
+            - .:/var/www/html
