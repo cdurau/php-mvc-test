@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -20,12 +20,15 @@ body {
     flex-wrap: wrap;
     width: 90%;
     margin: 0 auto;
-    border: 2px solid red;
 }
 
 .card {
     font-size: 1.6rem;
+    border-radius: 5px;
     border: 2px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+    overflow: hidden;
 }
 
 .card h3 {
